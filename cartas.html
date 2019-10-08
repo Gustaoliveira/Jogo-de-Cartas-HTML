@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css\bootstrap.min.css">
+  <link rel="stylesheet" href="css\style.css">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <title>Trunfo</title>
+</head>
+<body>
+
+
+    <h1>Selecione Suas Cartas: </h1>
+<br>
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <h1>  Jogador 1  </h1>
+      </div>  
+
+      <div class="col-md-8 meta">
+        <h1>  Jogador 2  </h1>
+      </div>  
+    </div>
+
+
+    <div class="row">
+
+
+        <div class="col-md-2 cr">
+          <img src="imagens/CR7 2.png" alt="" id="cr7">
+        </div>
+
+        <div class="col-md-2">
+          <img src="imagens/ney 2.png" alt="" id="cr7">
+        </div>
+
+        <div class="col-md-2 primeiri">
+          <img src="imagens/CR7 2.png" alt="" id="cr7">
+        </div>
+
+        <div class="col-md-2 primeira">
+          <img src="imagens/ney 2.png" alt="" id="cr7">
+        </div>
+
+
+    </div>
+
+        <div class="row">
+
+
+          <div class="col-md-2">
+         <img src="imagens/dinho 2.png" alt="" id="cr7">
+        </div>
+
+        <div class="col-md-2">
+          <img src="imagens/pelé 2.png" alt="" id="cr7">
+        </div>
+
+        <div class="col-md-2 segundi">
+       <img src="imagens/dinho 2.png" alt="" id="cr7">
+      </div>
+
+      <div class="col-md-2 segunda">
+        <img src="imagens/pelé 2.png" alt="" id="cr7">
+      </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+       <img src="imagens/maradona 2.png" id="cr7">
+      </div>
+
+      <div class="col-md-2">
+        <img src="imagens/r9 2.png" alt="" id="cr7">
+      </div>
+
+      <div class="row">
+        <div class="col-md-2 terceiri">
+       <img src="imagens/maradona 2.png" alt="" id="cr7">
+      </div>
+
+      <div class="col-md-2 terceira">
+        <img src="imagens/r9 2.png" alt="" id="cr7">
+      </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+       <img src="imagens/david 2.png" alt="" id="david">
+       </div>
+
+       <div class="col-md-2">
+         <img src="imagens/romario 2.png" alt="" id="cr7">
+       </div>
+
+       <div class="col-md-2 quarti">
+      <img src="imagens/david 2.png" alt="" id="david">
+      </div>
+
+      <div class="col-md-2 quarta">
+        <img src="imagens/romario 2.png" alt="" id="cr7">
+      </div>
+
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-2">
+       <img src="imagens/messi 2.png" alt="" id="cr7">
+      </div>
+
+      <div class="col-md-2">
+        <img src="imagens/zidane 2.png" alt="" id="cr7">
+      </div>
+
+      <div class="col-md-2 quinti">
+     <img src="imagens/messi 2.png" alt="" id="cr7">
+    </div>
+
+    <div class="col-md-2 quinta">
+      <img src="imagens/zidane 2.png" alt="" id="cr7">
+    </div>
+      </div>
+
+    </div>
+
+<div class="row">
+<div class="col-md-4">
+
+<form action="combate.php" method="POST">
+<select class="dois" name="p1">
+  <option> Selecione uma carta (J1) </option>
+  <option value="CR7"> Cristiano Ronaldo </option>
+  <option value="Backham"> David Backham </option>
+  <option value="Dinho"> Ronaldinho Gaúcho </option>
+  <option value="Messi"> Lionel Messi </option>
+  <option value="Ney"> Neymar Jr </option>
+  <option value="Pelé"> Edson Pelé </option>
+  <option value="R9"> Ronaldo Fenomeno </option>
+  <option value="Romario"> Romario </option>
+  <option value="Zidane"> Zidane </option>
+  <option value="Maradona"> Maradona </option>
+
+
+</select>
+</div>
+
+<div class="col-md-4">
+
+
+<select class="um" name="p2">
+
+  <option> Selecione uma carta (J2) </option>
+  <option value="CR7"> Cristiano Ronaldo </option>
+  <option value="Backham"> David Backham </option>
+  <option value="Dinho"> Ronaldinho Gaúcho </option>
+  <option value="Messi"> Lionel Messi </option>
+  <option value="Ney"> Neymar Jr </option>
+  <option value="Pelé"> Edson Pelé </option>
+  <option value="R9"> Ronaldo Fenomeno </option>
+  <option value="Romario"> Romario </option>
+  <option value="Zidane"> Zidane </option>
+  <option value="Maradona"> Maradona </option>
+
+
+</select>
+</div>
+
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+
+    <h1> Escolha qual o modo de batalha </h1>
+
+  </div>
+</div>
+
+<select class="opcao" name="batalha">
+    
+    <option> Selecione o modo de combate: </option>
+
+    <option value="0"> Velocidade </option>
+
+    <option value="1"> Força </option>
+
+    <option value="2"> Precisão </option>
+
+    <option value="3"> Resistência </option> 
+
+</select>
+
+
+<button class="btn btn-lg btn-warning" type="submit"> JOGAR ! ! </button>
+</form>
+
+</div>
+
+
+
+
+</body>
+</html>
